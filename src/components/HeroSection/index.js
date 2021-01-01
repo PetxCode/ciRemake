@@ -24,9 +24,7 @@ const HeroSection = () => {
   return (
     <>
       <HeroContainer>
-        <HeroBg>
-          <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-        </HeroBg>
+        <HeroBg></HeroBg>
         <HeroContent>
           <HeroH1></HeroH1>
           <HeroP></HeroP>
@@ -37,3 +35,5 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+// <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
