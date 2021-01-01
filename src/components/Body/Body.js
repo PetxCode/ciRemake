@@ -9,7 +9,15 @@ function Body() {
   const [counter, setCounter] = useState(2);
 
   return (
-    <div>
+    <div
+      style={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <center>
         <div style={{ textTransform: "uppercase", fontWeight: "bold" }}>
           What Stack are you
@@ -39,9 +47,14 @@ function Body() {
             {data[0]["author "]}"
           </p>
         </div>
-      </center>
-      <center>
-        <TimerComponentManager />
+
+        <center>
+          <hr />
+          <div style={{ margin: "20px 0" }}>
+            <hr />
+          </div>
+          <TimerComponentManager />
+        </center>
       </center>
     </div>
   );
